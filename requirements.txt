@@ -1,0 +1,2 @@
+pytest==5.4.3
+rocketchat_API==1.15.0
