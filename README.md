@@ -1,11 +1,13 @@
 # pytest-rocketchat
 Pytest to [RocketChat](https://github.com/RocketChat) reporting plugin.
 
+[![pypi](https://img.shields.io/pypi/v/pytest-rocketchat.svg)](https://pypi.org/project/pytest-rocketchat/)
+
 ___Inspired by [pytest-slack](https://pypi.org/project/pytest-slack/) & [pytest-messenger](https://pypi.org/project/pytest-messenger/).___
 
 ## Usage
 ```
-$ pytest --rocketchat_server_url=https://your.chat --rocketchat_username=username_or_a_botname --rocketchat_password=passowrord_of_user_or_of_a_bot
+$ pytest --rocketchat_server_url=https://your.chat --rocketchat_username=username --rocketchat_password=password
 ```
 Options:
 - --rocketchat_server_url* (Required)
