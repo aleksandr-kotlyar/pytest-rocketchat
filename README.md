@@ -1,7 +1,22 @@
 # pytest-rocketchat
-Inspired by pytest-slack & pytest-messenger.
+Pytest to [RocketChat](https://github.com/RocketChat) reporting plugin.
 
-Pytest to RocketChat reporting plugin
+___Inspired by [pytest-slack](https://pypi.org/project/pytest-slack/) & [pytest-messenger](https://pypi.org/project/pytest-messenger/).___
+
+## Usage
+```
+$ pytest --rocketchat_server_url=https://your.chat --rocketchat_username=username_or_a_botname --rocketchat_password=passowrord_of_user_or_of_a_bot
+```
+Options:
+- --rocketchat_server_url* (Required)
+- --rocketchat_username* (Required)
+- --rocketchat_password* (Required)
+- --rocketchat_report_link
+- --rocketchat_message_prefix
+- --rocketchat_timeout
+- --rocketchat_success_emoji
+- --rocketchat_failed_emoji
+- --ssl_verify
 
 ## Requirements
 - Python >= 3.6
