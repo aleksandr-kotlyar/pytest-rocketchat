@@ -128,7 +128,6 @@ def rocketchat_send_message(test_result, config, exitstatus):
         user=rocket_username,
         password=rocket_pass,
         server_url=server_url,
-        timeout=timeout,
         ssl_verify=ssl_verify,
     )
 
@@ -138,4 +137,5 @@ def rocketchat_send_message(test_result, config, exitstatus):
         alias=rocket_username,
         emoji=emoji,
         text=final_results,
+        timeout=timeout,
     )
