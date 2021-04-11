@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pytest-rocketchat"
-version = "1.0.1"
+version = "1.0.2"
 description = "Pytest to Rocket.Chat reporting plugin"
 authors = ["Aleksandr Kotlyar <ask.kotlyar@gmail.com>"]
 license = "MIT license"
