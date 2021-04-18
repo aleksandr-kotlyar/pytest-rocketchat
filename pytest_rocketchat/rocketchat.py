@@ -11,9 +11,9 @@ def add_rocketchat_options(parser):
         help="Set the TLS certificate verification",
     )
     group.addoption(
-        "--rocketchat_server_url",
+        "--rocketchat_domain",
         action="store",
-        dest="rocket_url",
+        dest="rocket_domain",
         default=None,
         help="Set rocketchat server url",
     )
@@ -83,7 +83,7 @@ def add_rocketchat_options(parser):
 def rocketchat_send_message(test_result, config, exitstatus):
     timeout = config.option.rocket_timeout
     report_link = config.option.rocket_report_link
-    server_url = config.option.rocket_url
+    rocket_domain = config.option.rocket_domain
     channel = config.option.rocket_channel
     ssl_verify = config.option.ssl_verify
     message_prefix = config.option.rocket_message_prefix
@@ -127,7 +127,7 @@ def rocketchat_send_message(test_result, config, exitstatus):
     rocket_client = RocketChat(
         user=rocket_username,
         password=rocket_pass,
-        server_url=server_url,
+        server_url=rocket_domain,
         ssl_verify=ssl_verify,
     )
 

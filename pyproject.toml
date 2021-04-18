@@ -24,6 +24,7 @@ pytest11 = { pytest-rocketchat = 'pytest_rocketchat.plugin' }
 
 [tool.poetry.dependencies]
 python = "^3.6"
+requests = "*"
 rocketchat-API = "*"
 
 [build-system]

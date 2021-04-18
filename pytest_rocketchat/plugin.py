@@ -29,5 +29,5 @@ def pytest_terminal_summary(terminalreporter, exitstatus, config):
     test_result.error = len(terminalreporter.stats.get("error", []))
     test_result.xfailed = len(terminalreporter.stats.get("xfailed", []))
     test_result.xpassed = len(terminalreporter.stats.get("xpassed", []))
-    if config.option.rocket_url and config.option.rocket_password:
+    if config.option.rocket_domain and config.option.rocket_password:
         rocketchat_send_message(test_result, config, exitstatus)

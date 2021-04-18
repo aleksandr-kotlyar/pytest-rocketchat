@@ -7,12 +7,13 @@ ___Inspired by [pytest-slack](https://pypi.org/project/pytest-slack/) & [pytest-
 
 ## Usage
 ```
-$ pytest --rocketchat_server_url=https://your.chat --rocketchat_username=username --rocketchat_password=password
+$ pytest --rocketchat_domain=https://your.chat --rocketchat_username=username --rocketchat_password=password --rocketchat_channel=channel
 ```
 Options:
-- --rocketchat_server_url* (Required)
+- --rocketchat_domain* (Required)
 - --rocketchat_username* (Required)
 - --rocketchat_password* (Required)
+- --rocketchat_channel* (Required)  
 - --rocketchat_report_link
 - --rocketchat_message_prefix
 - --rocketchat_timeout
@@ -22,6 +23,8 @@ Options:
 
 ## Requirements
 - Python >= 3.6
+- Requests
+- Rocketchat_API
 
 ## Installation
 You can install "pytest-rocketchat" via [pip](https://pypi.python.org/pypi/pip/):
